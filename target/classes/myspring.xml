@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> 
+        <!-- bean definitions here -->
+     <bean class="com.spring.Spring_Core_Simple_Project.dao.Student" id="mystudent"/>
+   
+<!-- Laptop class configuration -->
+<bean class="com.spring.Spring_Core_Simple_Project.dao.Laptop" id="mylaptop">
+<property name="id" value="100"/>
+<property name="name" value="hp"/>
+<property name="price" value="30000"/>
+</bean> 
+
+<!-- Product class configuration -->
+<bean class="com.spring.Spring_Core_Simple_Project.dao.Product" id="myproduct">
+<constructor-arg index="0" value="200"/>
+<constructor-arg index="1" value="laptop"/>
+<constructor-arg index="2" value="50000"/>
+</bean>   
+</beans>
